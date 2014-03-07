@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>fszmq</id>
+    <version>4.0.4</version>
+    <title>fszmq</title>
+    <authors>Paulmichael Blasucci</authors>
+    <owners>Paulmichael Blasucci</owners>
+    <licenseUrl>http://github.com/pblasucci/fszmq/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>http://pblasucci.github.io/fszmq</projectUrl>
+    <iconUrl>https://raw.github.com/fsharp/fszmq/master/docs/files/img/zmq_logo.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>fszmq is an LGPLv3-licensed F# binding for the ZeroMQ distributed computing library. It provides a complete binding to versions 2.1.x, 3.2.x, and 4.0.x of ZeroMQ (Note: each binding is a separate branch in git, as there are some non-compatible differences). This library is primarily designed to be consumed from F#. However, where possible, the library has been designed to appear "friendly" when consumed by other .NET languages (C#, et aliam).</description>
+    <summary>An LGPLv3-licensed F# binding for the ZeroMQ distributed computing library.</summary>
+    <releaseNotes>Tracked against zeromq4x (stable repo)
+Message type now has a corresponding suite of functions in the Message module
+Added utility functions for timing (see Timing module)
+Added utility functions for Base85 encoding (see Z85 module)
+Added utility functions for CURVE security (see Curve module). WARNING: experimental!
+Added unit tests
+Added API documentation
+Added narrative examples
+Refactored performance tests
+NuGet package now installs either x86 or x64 version of libzmq.dll (based on project configuration)
+NuGet package now has proper uninstaller</releaseNotes>
+    <copyright>© Paulmichael Blasucci. All rights reserved.</copyright>
+    <tags>F# fsharp zeromq zmq 0MQ distributed concurrent parallel messaging transport</tags>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="FSharp.Core" targetFramework="" />
+    </frameworkAssemblies>
+  </metadata>
+</package>
